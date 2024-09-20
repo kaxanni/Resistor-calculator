@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc_resJav.js"></script>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="small_rectangle1" id="small_rectangle1"></div>
+        <div class="small_rectangle2" id="small_rectangle2">  </div>
+        <div class="small_rectangle3" id="small_rectangle3"></div>
+        <div class="small_rectangle4" id="small_rectangle4"> </div>
+        <div class="small_rectangle5" id="small_rectangle5s"> </div>
+    </div>
+   
+    <div class="container">
+        <br><br>
+        <h3>Resistor Color Calculator</h3>
+        
+        <div class="container">
+         <h4>  <input type="radio" id="four" name="grp" checked onchange="check()">Four Band 
+          <input type="radio" id="five" name="grp" onchange="check()">Five Band</h4> 
+        </div>
+    
+      
+        <br>
+       
+        <div class="container1" id="container1">
+            <h5>
+            <label for="sel1">Select 1st Band</label>
+            <select id="sel1" onchange="change_color1(this);">
+                <option>--</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+          <!--      <option value=10>Gold</option>
+                <option value=11>Silver</option>  -->
+            </select>
+        </h5>
+        </div>
+     
+
+        <div class="container2" id="container2">
+            <h5>
+            <label for="sel2">Select 2nd Band</label>
+            <select id="sel2" onchange="change_color2(this);">
+                <option>--</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                 <option value=9>White</option>
+             <!--   <option value=10>Gold</option>
+                <option value=11>Silver</option>  -->
+            </select>
+            </h5>
+            
+        </div>
+
+        <div class="container3" id="container3">
+            <h5>
+            <label for="sel5">Select 3rd band</label>
+            <select id="sel5" onchange="change_color5(this);" disabled>
+                <option>--</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+        <!--        <option value=10>Gold</option>
+                <option value=11>Silver</option>  -->
+            </select>
+            </h5>
+            
+        </div>
+
+        <div class="container4" id="container4">
+            <h5>
+            <label for="sel3">Select Multiplier</label>
+            <select id="sel3" onchange="change_color3(this);">
+                <option>--</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+            </h5>
+            
+        </div>
+        
+
+        <div class="container5" id="container5">
+            <h5>
+            <label for="sel4">Select Tolerance</label>
+            <select id="sel4" onchange="change_color4(this);">
+                <option>--</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+            </h5>
+        </div>
+        <br>
+        <h6>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+    <p id="ans"></p></h6>
+</div>
+</body>
+</html>
